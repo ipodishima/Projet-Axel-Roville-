@@ -1,0 +1,446 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FA3451F816A1DD3B00754720 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA3451F716A1DD3B00754720 /* UIKit.framework */; };
+		FA3451FA16A1DD3B00754720 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA3451F916A1DD3B00754720 /* Foundation.framework */; };
+		FA3451FC16A1DD3B00754720 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA3451FB16A1DD3B00754720 /* CoreGraphics.framework */; };
+		FA34520216A1DD3C00754720 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FA34520016A1DD3C00754720 /* InfoPlist.strings */; };
+		FA34520416A1DD3C00754720 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FA34520316A1DD3C00754720 /* main.m */; };
+		FA34520816A1DD3C00754720 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FA34520716A1DD3C00754720 /* AppDelegate.m */; };
+		FA34520A16A1DD3C00754720 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = FA34520916A1DD3C00754720 /* Default.png */; };
+		FA34520C16A1DD3C00754720 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FA34520B16A1DD3C00754720 /* Default@2x.png */; };
+		FA34520E16A1DD3C00754720 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FA34520D16A1DD3C00754720 /* Default-568h@2x.png */; };
+		FA34521616A1DD3C00754720 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA34521516A1DD3C00754720 /* SenTestingKit.framework */; };
+		FA34521716A1DD3C00754720 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA3451F716A1DD3B00754720 /* UIKit.framework */; };
+		FA34521816A1DD3C00754720 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA3451F916A1DD3B00754720 /* Foundation.framework */; };
+		FA34522016A1DD3C00754720 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FA34521E16A1DD3C00754720 /* InfoPlist.strings */; };
+		FA34522316A1DD3D00754720 /* Projet_Axel_Roville_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = FA34522216A1DD3D00754720 /* Projet_Axel_Roville_Tests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FA34521916A1DD3C00754720 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA3451EA16A1DD3B00754720 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FA3451F216A1DD3B00754720;
+			remoteInfo = "Projet Axel Rovillé";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FA3451F316A1DD3B00754720 /* Projet Axel Rovillé.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Projet Axel Rovillé.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA3451F716A1DD3B00754720 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		FA3451F916A1DD3B00754720 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		FA3451FB16A1DD3B00754720 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		FA3451FF16A1DD3C00754720 /* Projet Axel Rovillé-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Projet Axel Rovillé-Info.plist"; sourceTree = "<group>"; };
+		FA34520116A1DD3C00754720 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FA34520316A1DD3C00754720 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FA34520516A1DD3C00754720 /* Projet Axel Rovillé-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Projet Axel Rovillé-Prefix.pch"; sourceTree = "<group>"; };
+		FA34520616A1DD3C00754720 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FA34520716A1DD3C00754720 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FA34520916A1DD3C00754720 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		FA34520B16A1DD3C00754720 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		FA34520D16A1DD3C00754720 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		FA34521416A1DD3C00754720 /* Projet Axel RovilléTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Projet Axel RovilléTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA34521516A1DD3C00754720 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		FA34521D16A1DD3C00754720 /* Projet Axel RovilléTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Projet Axel RovilléTests-Info.plist"; sourceTree = "<group>"; };
+		FA34521F16A1DD3C00754720 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FA34522116A1DD3C00754720 /* Projet_Axel_Roville_Tests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Projet_Axel_Roville_Tests.h; sourceTree = "<group>"; };
+		FA34522216A1DD3D00754720 /* Projet_Axel_Roville_Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Projet_Axel_Roville_Tests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FA3451F016A1DD3B00754720 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA3451F816A1DD3B00754720 /* UIKit.framework in Frameworks */,
+				FA3451FA16A1DD3B00754720 /* Foundation.framework in Frameworks */,
+				FA3451FC16A1DD3B00754720 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA34521016A1DD3C00754720 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA34521616A1DD3C00754720 /* SenTestingKit.framework in Frameworks */,
+				FA34521716A1DD3C00754720 /* UIKit.framework in Frameworks */,
+				FA34521816A1DD3C00754720 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FA3451E816A1DD3B00754720 = {
+			isa = PBXGroup;
+			children = (
+				FA3451FD16A1DD3B00754720 /* Projet Axel Rovillé */,
+				FA34521B16A1DD3C00754720 /* Projet Axel RovilléTests */,
+				FA3451F616A1DD3B00754720 /* Frameworks */,
+				FA3451F416A1DD3B00754720 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FA3451F416A1DD3B00754720 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FA3451F316A1DD3B00754720 /* Projet Axel Rovillé.app */,
+				FA34521416A1DD3C00754720 /* Projet Axel RovilléTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FA3451F616A1DD3B00754720 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FA3451F716A1DD3B00754720 /* UIKit.framework */,
+				FA3451F916A1DD3B00754720 /* Foundation.framework */,
+				FA3451FB16A1DD3B00754720 /* CoreGraphics.framework */,
+				FA34521516A1DD3C00754720 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FA3451FD16A1DD3B00754720 /* Projet Axel Rovillé */ = {
+			isa = PBXGroup;
+			children = (
+				FA34520616A1DD3C00754720 /* AppDelegate.h */,
+				FA34520716A1DD3C00754720 /* AppDelegate.m */,
+				FA3451FE16A1DD3C00754720 /* Supporting Files */,
+			);
+			path = "Projet Axel Rovillé";
+			sourceTree = "<group>";
+		};
+		FA3451FE16A1DD3C00754720 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FA3451FF16A1DD3C00754720 /* Projet Axel Rovillé-Info.plist */,
+				FA34520016A1DD3C00754720 /* InfoPlist.strings */,
+				FA34520316A1DD3C00754720 /* main.m */,
+				FA34520516A1DD3C00754720 /* Projet Axel Rovillé-Prefix.pch */,
+				FA34520916A1DD3C00754720 /* Default.png */,
+				FA34520B16A1DD3C00754720 /* Default@2x.png */,
+				FA34520D16A1DD3C00754720 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FA34521B16A1DD3C00754720 /* Projet Axel RovilléTests */ = {
+			isa = PBXGroup;
+			children = (
+				FA34522116A1DD3C00754720 /* Projet_Axel_Roville_Tests.h */,
+				FA34522216A1DD3D00754720 /* Projet_Axel_Roville_Tests.m */,
+				FA34521C16A1DD3C00754720 /* Supporting Files */,
+			);
+			path = "Projet Axel RovilléTests";
+			sourceTree = "<group>";
+		};
+		FA34521C16A1DD3C00754720 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FA34521D16A1DD3C00754720 /* Projet Axel RovilléTests-Info.plist */,
+				FA34521E16A1DD3C00754720 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FA3451F216A1DD3B00754720 /* Projet Axel Rovillé */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA34522616A1DD3D00754720 /* Build configuration list for PBXNativeTarget "Projet Axel Rovillé" */;
+			buildPhases = (
+				FA3451EF16A1DD3B00754720 /* Sources */,
+				FA3451F016A1DD3B00754720 /* Frameworks */,
+				FA3451F116A1DD3B00754720 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Projet Axel Rovillé";
+			productName = "Projet Axel Rovillé";
+			productReference = FA3451F316A1DD3B00754720 /* Projet Axel Rovillé.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FA34521316A1DD3C00754720 /* Projet Axel RovilléTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA34522916A1DD3D00754720 /* Build configuration list for PBXNativeTarget "Projet Axel RovilléTests" */;
+			buildPhases = (
+				FA34520F16A1DD3C00754720 /* Sources */,
+				FA34521016A1DD3C00754720 /* Frameworks */,
+				FA34521116A1DD3C00754720 /* Resources */,
+				FA34521216A1DD3C00754720 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FA34521A16A1DD3C00754720 /* PBXTargetDependency */,
+			);
+			name = "Projet Axel RovilléTests";
+			productName = "Projet Axel RovilléTests";
+			productReference = FA34521416A1DD3C00754720 /* Projet Axel RovilléTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FA3451EA16A1DD3B00754720 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Axel Rovillé";
+			};
+			buildConfigurationList = FA3451ED16A1DD3B00754720 /* Build configuration list for PBXProject "Projet Axel Rovillé" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = FA3451E816A1DD3B00754720;
+			productRefGroup = FA3451F416A1DD3B00754720 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FA3451F216A1DD3B00754720 /* Projet Axel Rovillé */,
+				FA34521316A1DD3C00754720 /* Projet Axel RovilléTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FA3451F116A1DD3B00754720 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA34520216A1DD3C00754720 /* InfoPlist.strings in Resources */,
+				FA34520A16A1DD3C00754720 /* Default.png in Resources */,
+				FA34520C16A1DD3C00754720 /* Default@2x.png in Resources */,
+				FA34520E16A1DD3C00754720 /* Default-568h@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA34521116A1DD3C00754720 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA34522016A1DD3C00754720 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		FA34521216A1DD3C00754720 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FA3451EF16A1DD3B00754720 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA34520416A1DD3C00754720 /* main.m in Sources */,
+				FA34520816A1DD3C00754720 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA34520F16A1DD3C00754720 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA34522316A1DD3D00754720 /* Projet_Axel_Roville_Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FA34521A16A1DD3C00754720 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FA3451F216A1DD3B00754720 /* Projet Axel Rovillé */;
+			targetProxy = FA34521916A1DD3C00754720 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FA34520016A1DD3C00754720 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA34520116A1DD3C00754720 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		FA34521E16A1DD3C00754720 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA34521F16A1DD3C00754720 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FA34522416A1DD3D00754720 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FA34522516A1DD3D00754720 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FA34522716A1DD3D00754720 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Projet Axel Rovillé/Projet Axel Rovillé-Prefix.pch";
+				INFOPLIST_FILE = "Projet Axel Rovillé/Projet Axel Rovillé-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		FA34522816A1DD3D00754720 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Projet Axel Rovillé/Projet Axel Rovillé-Prefix.pch";
+				INFOPLIST_FILE = "Projet Axel Rovillé/Projet Axel Rovillé-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		FA34522A16A1DD3D00754720 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Projet Axel Rovillé.app/Projet Axel Rovillé";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Projet Axel Rovillé/Projet Axel Rovillé-Prefix.pch";
+				INFOPLIST_FILE = "Projet Axel RovilléTests/Projet Axel RovilléTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		FA34522B16A1DD3D00754720 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Projet Axel Rovillé.app/Projet Axel Rovillé";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Projet Axel Rovillé/Projet Axel Rovillé-Prefix.pch";
+				INFOPLIST_FILE = "Projet Axel RovilléTests/Projet Axel RovilléTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FA3451ED16A1DD3B00754720 /* Build configuration list for PBXProject "Projet Axel Rovillé" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA34522416A1DD3D00754720 /* Debug */,
+				FA34522516A1DD3D00754720 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA34522616A1DD3D00754720 /* Build configuration list for PBXNativeTarget "Projet Axel Rovillé" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA34522716A1DD3D00754720 /* Debug */,
+				FA34522816A1DD3D00754720 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FA34522916A1DD3D00754720 /* Build configuration list for PBXNativeTarget "Projet Axel RovilléTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA34522A16A1DD3D00754720 /* Debug */,
+				FA34522B16A1DD3D00754720 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FA3451EA16A1DD3B00754720 /* Project object */;
+}
