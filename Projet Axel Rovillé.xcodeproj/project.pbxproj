@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA22850716A48EA300C6B048 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA22850616A48EA300C6B048 /* FacebookSDK.framework */; };
+		FA22850916A48EC200C6B048 /* FacebookSDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = FA22850816A48EC200C6B048 /* FacebookSDKResources.bundle */; };
+		FA22850B16A48ED100C6B048 /* FBUserSettingsViewResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = FA22850A16A48ED100C6B048 /* FBUserSettingsViewResources.bundle */; };
+		FA22850F16A48F2900C6B048 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA22850C16A48F2900C6B048 /* Accounts.framework */; };
+		FA22851016A48F2900C6B048 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA22850D16A48F2900C6B048 /* AdSupport.framework */; };
+		FA22851116A48F2900C6B048 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA22850E16A48F2900C6B048 /* Social.framework */; };
 		FA3451F816A1DD3B00754720 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA3451F716A1DD3B00754720 /* UIKit.framework */; };
 		FA3451FA16A1DD3B00754720 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA3451F916A1DD3B00754720 /* Foundation.framework */; };
 		FA3451FC16A1DD3B00754720 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA3451FB16A1DD3B00754720 /* CoreGraphics.framework */; };
@@ -21,6 +27,24 @@
 		FA34521816A1DD3C00754720 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA3451F916A1DD3B00754720 /* Foundation.framework */; };
 		FA34522016A1DD3C00754720 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FA34521E16A1DD3C00754720 /* InfoPlist.strings */; };
 		FA34522316A1DD3D00754720 /* Projet_Axel_Roville_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = FA34522216A1DD3D00754720 /* Projet_Axel_Roville_Tests.m */; };
+		FA34524E16A2DFA100754720 /* CoursViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA34524C16A2DFA000754720 /* CoursViewController.m */; };
+		FA34524F16A2DFA100754720 /* CoursViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA34524D16A2DFA100754720 /* CoursViewController.xib */; };
+		FA34525316A2DFC300754720 /* OrdersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA34525116A2DFC300754720 /* OrdersViewController.m */; };
+		FA34525416A2DFC300754720 /* OrdersViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA34525216A2DFC300754720 /* OrdersViewController.xib */; };
+		FA34525916A310B200754720 /* fakeDataListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA34525816A310B200754720 /* fakeDataListViewController.m */; };
+		FA5C550816A31E15001F006F /* DetailListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA5C550616A31E15001F006F /* DetailListViewController.m */; };
+		FA5C550916A31E15001F006F /* DetailListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA5C550716A31E15001F006F /* DetailListViewController.xib */; };
+		FA5C551816A32FB8001F006F /* chateauyquem1995.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = FA5C551516A32FB8001F006F /* chateauyquem1995.jpeg */; };
+		FA5C551916A32FB8001F006F /* leovillebarton1990.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = FA5C551616A32FB8001F006F /* leovillebarton1990.jpeg */; };
+		FA5C551A16A32FB8001F006F /* chateaulatour1990.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = FA5C551716A32FB8001F006F /* chateaulatour1990.jpeg */; };
+		FA5C551D16A330E4001F006F /* Wine.m in Sources */ = {isa = PBXBuildFile; fileRef = FA5C551C16A330E3001F006F /* Wine.m */; };
+		FA5C552216A332C2001F006F /* vins.json in Resources */ = {isa = PBXBuildFile; fileRef = FA5C552116A332C2001F006F /* vins.json */; };
+		FA5C552816A334BE001F006F /* DownloadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FA5C552516A334BD001F006F /* DownloadManager.m */; };
+		FA5C552916A334BE001F006F /* DownloadOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = FA5C552716A334BD001F006F /* DownloadOperation.m */; };
+		FA5C553016A34213001F006F /* WineLoadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA5C552E16A34213001F006F /* WineLoadViewController.m */; };
+		FA5C553116A34213001F006F /* WineLoadViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA5C552F16A34213001F006F /* WineLoadViewController.xib */; };
+		FA5C553816A42CAE001F006F /* DetailWineListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA5C553616A42CAE001F006F /* DetailWineListViewController.m */; };
+		FA5C553916A42CAE001F006F /* DetailWineListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA5C553716A42CAE001F006F /* DetailWineListViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +58,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FA22850616A48EA300C6B048 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../../Documents/FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
+		FA22850816A48EC200C6B048 /* FacebookSDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = FacebookSDKResources.bundle; path = ../../Documents/FacebookSDK/FacebookSDK.framework/Versions/A/Resources/FacebookSDKResources.bundle; sourceTree = "<group>"; };
+		FA22850A16A48ED100C6B048 /* FBUserSettingsViewResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = FBUserSettingsViewResources.bundle; path = ../../Documents/FacebookSDK/FacebookSDK.framework/Versions/A/Resources/FBUserSettingsViewResources.bundle; sourceTree = "<group>"; };
+		FA22850C16A48F2900C6B048 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		FA22850D16A48F2900C6B048 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		FA22850E16A48F2900C6B048 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		FA3451F316A1DD3B00754720 /* Projet Axel Rovillé.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Projet Axel Rovillé.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA3451F716A1DD3B00754720 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		FA3451F916A1DD3B00754720 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -53,6 +83,34 @@
 		FA34521F16A1DD3C00754720 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		FA34522116A1DD3C00754720 /* Projet_Axel_Roville_Tests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Projet_Axel_Roville_Tests.h; sourceTree = "<group>"; };
 		FA34522216A1DD3D00754720 /* Projet_Axel_Roville_Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Projet_Axel_Roville_Tests.m; sourceTree = "<group>"; };
+		FA34524B16A2DFA000754720 /* CoursViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoursViewController.h; sourceTree = "<group>"; };
+		FA34524C16A2DFA000754720 /* CoursViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoursViewController.m; sourceTree = "<group>"; };
+		FA34524D16A2DFA100754720 /* CoursViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CoursViewController.xib; sourceTree = "<group>"; };
+		FA34525016A2DFC300754720 /* OrdersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrdersViewController.h; sourceTree = "<group>"; };
+		FA34525116A2DFC300754720 /* OrdersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrdersViewController.m; sourceTree = "<group>"; };
+		FA34525216A2DFC300754720 /* OrdersViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OrdersViewController.xib; sourceTree = "<group>"; };
+		FA34525716A310B100754720 /* fakeDataListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fakeDataListViewController.h; sourceTree = "<group>"; };
+		FA34525816A310B200754720 /* fakeDataListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = fakeDataListViewController.m; sourceTree = "<group>"; };
+		FA5C550516A31E15001F006F /* DetailListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailListViewController.h; sourceTree = "<group>"; };
+		FA5C550616A31E15001F006F /* DetailListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailListViewController.m; sourceTree = "<group>"; };
+		FA5C550716A31E15001F006F /* DetailListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailListViewController.xib; sourceTree = "<group>"; };
+		FA5C551516A32FB8001F006F /* chateauyquem1995.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chateauyquem1995.jpeg; sourceTree = "<group>"; };
+		FA5C551616A32FB8001F006F /* leovillebarton1990.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = leovillebarton1990.jpeg; sourceTree = "<group>"; };
+		FA5C551716A32FB8001F006F /* chateaulatour1990.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chateaulatour1990.jpeg; sourceTree = "<group>"; };
+		FA5C551B16A330E3001F006F /* Wine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Wine.h; sourceTree = "<group>"; };
+		FA5C551C16A330E3001F006F /* Wine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Wine.m; sourceTree = "<group>"; };
+		FA5C552116A332C2001F006F /* vins.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = vins.json; sourceTree = "<group>"; };
+		FA5C552316A334BD001F006F /* DownloadDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadDelegate.h; sourceTree = "<group>"; };
+		FA5C552416A334BD001F006F /* DownloadManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadManager.h; sourceTree = "<group>"; };
+		FA5C552516A334BD001F006F /* DownloadManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadManager.m; sourceTree = "<group>"; };
+		FA5C552616A334BD001F006F /* DownloadOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadOperation.h; sourceTree = "<group>"; };
+		FA5C552716A334BD001F006F /* DownloadOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadOperation.m; sourceTree = "<group>"; };
+		FA5C552D16A34212001F006F /* WineLoadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WineLoadViewController.h; sourceTree = "<group>"; };
+		FA5C552E16A34213001F006F /* WineLoadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WineLoadViewController.m; sourceTree = "<group>"; };
+		FA5C552F16A34213001F006F /* WineLoadViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WineLoadViewController.xib; sourceTree = "<group>"; };
+		FA5C553516A42CAD001F006F /* DetailWineListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailWineListViewController.h; sourceTree = "<group>"; };
+		FA5C553616A42CAE001F006F /* DetailWineListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailWineListViewController.m; sourceTree = "<group>"; };
+		FA5C553716A42CAE001F006F /* DetailWineListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailWineListViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,9 +118,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA22850F16A48F2900C6B048 /* Accounts.framework in Frameworks */,
+				FA22851016A48F2900C6B048 /* AdSupport.framework in Frameworks */,
+				FA22851116A48F2900C6B048 /* Social.framework in Frameworks */,
 				FA3451F816A1DD3B00754720 /* UIKit.framework in Frameworks */,
 				FA3451FA16A1DD3B00754720 /* Foundation.framework in Frameworks */,
 				FA3451FC16A1DD3B00754720 /* CoreGraphics.framework in Frameworks */,
+				FA22850716A48EA300C6B048 /* FacebookSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,6 +163,12 @@
 		FA3451F616A1DD3B00754720 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FA22850E16A48F2900C6B048 /* Social.framework */,
+				FA22850D16A48F2900C6B048 /* AdSupport.framework */,
+				FA22850C16A48F2900C6B048 /* Accounts.framework */,
+				FA22850A16A48ED100C6B048 /* FBUserSettingsViewResources.bundle */,
+				FA22850816A48EC200C6B048 /* FacebookSDKResources.bundle */,
+				FA22850616A48EA300C6B048 /* FacebookSDK.framework */,
 				FA3451F716A1DD3B00754720 /* UIKit.framework */,
 				FA3451F916A1DD3B00754720 /* Foundation.framework */,
 				FA3451FB16A1DD3B00754720 /* CoreGraphics.framework */,
@@ -112,9 +180,37 @@
 		FA3451FD16A1DD3B00754720 /* Projet Axel Rovillé */ = {
 			isa = PBXGroup;
 			children = (
+				FA5C552316A334BD001F006F /* DownloadDelegate.h */,
+				FA5C552416A334BD001F006F /* DownloadManager.h */,
+				FA5C552516A334BD001F006F /* DownloadManager.m */,
+				FA5C552616A334BD001F006F /* DownloadOperation.h */,
+				FA5C552716A334BD001F006F /* DownloadOperation.m */,
+				FA5C552116A332C2001F006F /* vins.json */,
+				FA5C551516A32FB8001F006F /* chateauyquem1995.jpeg */,
+				FA5C551616A32FB8001F006F /* leovillebarton1990.jpeg */,
+				FA5C551716A32FB8001F006F /* chateaulatour1990.jpeg */,
+				FA5C550516A31E15001F006F /* DetailListViewController.h */,
+				FA5C550616A31E15001F006F /* DetailListViewController.m */,
+				FA5C550716A31E15001F006F /* DetailListViewController.xib */,
 				FA34520616A1DD3C00754720 /* AppDelegate.h */,
 				FA34520716A1DD3C00754720 /* AppDelegate.m */,
 				FA3451FE16A1DD3C00754720 /* Supporting Files */,
+				FA34524B16A2DFA000754720 /* CoursViewController.h */,
+				FA34524C16A2DFA000754720 /* CoursViewController.m */,
+				FA34524D16A2DFA100754720 /* CoursViewController.xib */,
+				FA34525016A2DFC300754720 /* OrdersViewController.h */,
+				FA34525116A2DFC300754720 /* OrdersViewController.m */,
+				FA34525216A2DFC300754720 /* OrdersViewController.xib */,
+				FA34525716A310B100754720 /* fakeDataListViewController.h */,
+				FA34525816A310B200754720 /* fakeDataListViewController.m */,
+				FA5C551B16A330E3001F006F /* Wine.h */,
+				FA5C551C16A330E3001F006F /* Wine.m */,
+				FA5C552D16A34212001F006F /* WineLoadViewController.h */,
+				FA5C552E16A34213001F006F /* WineLoadViewController.m */,
+				FA5C552F16A34213001F006F /* WineLoadViewController.xib */,
+				FA5C553516A42CAD001F006F /* DetailWineListViewController.h */,
+				FA5C553616A42CAE001F006F /* DetailWineListViewController.m */,
+				FA5C553716A42CAE001F006F /* DetailWineListViewController.xib */,
 			);
 			path = "Projet Axel Rovillé";
 			sourceTree = "<group>";
@@ -227,6 +323,17 @@
 				FA34520A16A1DD3C00754720 /* Default.png in Resources */,
 				FA34520C16A1DD3C00754720 /* Default@2x.png in Resources */,
 				FA34520E16A1DD3C00754720 /* Default-568h@2x.png in Resources */,
+				FA34524F16A2DFA100754720 /* CoursViewController.xib in Resources */,
+				FA34525416A2DFC300754720 /* OrdersViewController.xib in Resources */,
+				FA5C550916A31E15001F006F /* DetailListViewController.xib in Resources */,
+				FA5C551816A32FB8001F006F /* chateauyquem1995.jpeg in Resources */,
+				FA5C551916A32FB8001F006F /* leovillebarton1990.jpeg in Resources */,
+				FA5C551A16A32FB8001F006F /* chateaulatour1990.jpeg in Resources */,
+				FA5C552216A332C2001F006F /* vins.json in Resources */,
+				FA5C553116A34213001F006F /* WineLoadViewController.xib in Resources */,
+				FA5C553916A42CAE001F006F /* DetailWineListViewController.xib in Resources */,
+				FA22850916A48EC200C6B048 /* FacebookSDKResources.bundle in Resources */,
+				FA22850B16A48ED100C6B048 /* FBUserSettingsViewResources.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,6 +370,15 @@
 			files = (
 				FA34520416A1DD3C00754720 /* main.m in Sources */,
 				FA34520816A1DD3C00754720 /* AppDelegate.m in Sources */,
+				FA34524E16A2DFA100754720 /* CoursViewController.m in Sources */,
+				FA34525316A2DFC300754720 /* OrdersViewController.m in Sources */,
+				FA34525916A310B200754720 /* fakeDataListViewController.m in Sources */,
+				FA5C550816A31E15001F006F /* DetailListViewController.m in Sources */,
+				FA5C551D16A330E4001F006F /* Wine.m in Sources */,
+				FA5C552816A334BE001F006F /* DownloadManager.m in Sources */,
+				FA5C552916A334BE001F006F /* DownloadOperation.m in Sources */,
+				FA5C553016A34213001F006F /* WineLoadViewController.m in Sources */,
+				FA5C553816A42CAE001F006F /* DetailWineListViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,10 +475,18 @@
 		FA34522716A1DD3D00754720 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/../../Documents/FacebookSDK\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Projet Axel Rovillé/Projet Axel Rovillé-Prefix.pch";
 				INFOPLIST_FILE = "Projet Axel Rovillé/Projet Axel Rovillé-Info.plist";
+				New_Setting = "";
+				OTHER_LDFLAGS = "-lsqlite3.0";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -370,10 +494,18 @@
 		FA34522816A1DD3D00754720 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/../../Documents/FacebookSDK\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Projet Axel Rovillé/Projet Axel Rovillé-Prefix.pch";
 				INFOPLIST_FILE = "Projet Axel Rovillé/Projet Axel Rovillé-Info.plist";
+				New_Setting = "";
+				OTHER_LDFLAGS = "-lsqlite3.0";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -431,6 +563,7 @@
 				FA34522816A1DD3D00754720 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FA34522916A1DD3D00754720 /* Build configuration list for PBXNativeTarget "Projet Axel RovilléTests" */ = {
 			isa = XCConfigurationList;
@@ -439,6 +572,7 @@
 				FA34522B16A1DD3D00754720 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

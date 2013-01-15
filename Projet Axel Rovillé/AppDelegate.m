@@ -7,43 +7,58 @@
 //
 
 #import "AppDelegate.h"
+#import "WineListViewController.h"
+#import "CoursViewController.h"
+#import "OrdersViewController.h"
+#import "WineLoadViewController.h"
 
 @implementation AppDelegate
+
+@synthesize window = _window;
+@synthesize tabBarController = _tabBarController;
+ 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.tabBarController = [[UITabBarController alloc] init];
+    
+    
+   fakeDataListViewController  *dataListViewController = [[fakeDataListViewController alloc] initWithStyle:UITableViewStylePlain];
+    dataListViewController.title = @"Accueil";
+    UINavigationController *homeNavigationController = [[UINavigationController alloc] initWithRootViewController: dataListViewController];
+    homeNavigationController.title = @"Accueil";
+
+    
+    
+    //WineListViewController *wineListViewController = [[WineListViewController alloc] initWithNibName:@"WineListViewController" bundle:nil];
+    //wineListViewController.title = @"Vins";
+    
+    WineLoadViewController *wineLoadViewController = [[WineLoadViewController alloc] initWithNibName:@"WineLoadViewController" bundle:nil];
+    wineLoadViewController.title = @"Vins";
+    UINavigationController *wineListNavigationController = [[UINavigationController alloc] initWithRootViewController: wineLoadViewController];
+    wineListNavigationController.title = @"Vins";
+    
+    
+    CoursViewController *coursViewController = [[CoursViewController alloc] initWithNibName:@"CoursViewController" bundle:nil];
+    coursViewController.title = @"Cours";
+    
+    OrdersViewController *ordersViewController = [[OrdersViewController alloc] initWithNibName:@"OrdersViewController" bundle:nil];
+    ordersViewController.title = @"Commandes";
+    
+    _tabBarController.viewControllers = [NSArray arrayWithObjects:/*_dataListViewController,*/homeNavigationController, wineListNavigationController, coursViewController, ordersViewController, nil];
+    
+    
+    
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
+    //_dataListViewController = [[DataListViewController alloc] initWithStyle:UITableViewStylePlain];
+    //navigationController = [[UINavigationController alloc] initWithRootViewController:_dataListViewController];
+    //[navigationController setViewControllers:_navController];
+     [_window setRootViewController:_tabBarController];
+     
     [self.window makeKeyAndVisible];
     return YES;
-}
-
-- (void)applicationWillResignActive:(UIApplication *)application
-{
-    // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
-    // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
-}
-
-- (void)applicationDidEnterBackground:(UIApplication *)application
-{
-    // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later. 
-    // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
-}
-
-- (void)applicationWillEnterForeground:(UIApplication *)application
-{
-    // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
-}
-
-- (void)applicationDidBecomeActive:(UIApplication *)application
-{
-    // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
-}
-
-- (void)applicationWillTerminate:(UIApplication *)application
-{
-    // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
 @end

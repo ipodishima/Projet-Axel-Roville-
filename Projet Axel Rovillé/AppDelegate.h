@@ -7,9 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "fakeDataListViewController.h"
+
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
+{
+   // fakeDataListViewController *_dataListViewController;
+}
+
 
 @property (strong, nonatomic) UIWindow *window;
+@property (nonatomic, strong) UITabBarController *tabBarController;
 
 @end
