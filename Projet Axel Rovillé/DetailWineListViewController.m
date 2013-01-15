@@ -41,6 +41,7 @@
     orderItem = [UIButton buttonWithType:UIButtonTypeRoundedRect];
     [orderItem addTarget:self action:@selector(addOrder:) forControlEvents:(UIControlEvents)UIControlEventTouchUpInside];
     orderItem.frame = CGRectMake(80, 320, 160, 40);
+    [orderItem setTitle:@"Commander" forState:UIControlStateNormal];
     [self.view addSubview:labelView];
     [self.view addSubview:orderItem];
     
