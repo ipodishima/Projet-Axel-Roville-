@@ -8,7 +8,9 @@
 
 #import "fakeDataListViewController.h"
 #import "DetailListViewController.h"
-#import "WineListViewController.h"
+#import "ProfileViewController.h"
+#import "AboutViewController.h"
+//#import "WineListViewController.h"
 
 @interface fakeDataListViewController ()
 
@@ -76,14 +78,20 @@
 {
     
     switch (indexPath.row) {
-//        case 0:
-//            {
-//                WineListViewController *wineListViewController = [[WineListViewController alloc] initWithNibName:@"WineListViewController" bundle:nil];
-//                wineListViewController.title = @"Vins";
-//                [self.navigationController pushViewController:wineListViewController animated:YES];
-//                break;
-//            }
-            
+        case 0:
+            {
+                ProfileViewController *profileViewController = [[ProfileViewController alloc] initWithNibName:@"ProfileViewController" bundle:nil];
+                profileViewController.title = @"Mon profil";
+                [self.navigationController pushViewController:profileViewController animated:YES];
+                break;
+            }
+        case 2:
+            {
+                AboutViewController *about = [[AboutViewController alloc] initWithNibName:@"AboutViewController" bundle:nil];
+                about.title = @"À propos";
+                [self.navigationController pushViewController:about animated:YES];
+                break;
+            }
         default:
             {
                 DetailListViewController *detailListViewController = [[DetailListViewController alloc] initWithNibName:@"DetailListViewController" bundle:nil];

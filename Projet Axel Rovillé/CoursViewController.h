@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CoursViewController : UIViewController
+@interface CoursViewController : UITableViewController
 
 @end

@@ -1,14 +1,17 @@
 //
-//  SampleLoadViewController.m
-//  MSToolTips
+//  WinesListViewController.m
+//  Projet Axel Rovillé
 //
-//  Created by Marian Paul on 24/10/12.
-//  Copyright (c) 2012 Marian Paul. All rights reserved.
+//  Created by Axel Rovillé on 15/01/13.
+//  Copyright (c) 2013 Axel Rovillé. All rights reserved.
 //
 
-#import "WineLoadViewController.h"
-#import "Wine.h"
 #import "DetailWineListViewController.h"
+#import "Wine.h"
+#import "WineLoadViewController.h"
+//#import "SCLoginViewController.h"
+//#import "SCViewController.h"
+
 
 @interface WineLoadViewController ()
 
@@ -16,24 +19,25 @@
 
 @implementation WineLoadViewController
 
+- (id)initWithStyle:(UITableViewStyle)style
+{
+    self = [super initWithStyle:style];
+    if (self) {
+        // Custom initialization
+    }
+    return self;
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     
-    // 1)
-    // Alloc the view which shows activity
     _activity = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
     // Set it to the right on navigation bar
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:_activity];
     
     // Load the JSON from the file
     [[DownloadManager shared] loadLocalFileName:@"vins" withDelegate:self];
-    
-    // If your app will be connected, then you just have to replace the previous line with
-    //
-    //     NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:yourURL];
-    //     [[DownloadManager shared] loadRequest:request withDelegate:self];
-    
 }
 
 - (void)didReceiveMemoryWarning
@@ -63,26 +67,34 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
     }
     
-    // Get the wine for the row
     Wine *w = [_arrayOfWines objectAtIndex:indexPath.row];
     
-    // Display!
     cell.textLabel.text = [NSString stringWithFormat:@"%@", w.name];
-    cell.detailTextLabel.text = [NSString stringWithFormat:@"%@", w.year];
+    cell.detailTextLabel.text = [NSString stringWithFormat:@"%@     %d €", w.year, 12];
     cell.imageView.image = [UIImage imageNamed:w.label];
-
+    
     return cell;
 }
+
+
 
 #pragma mark - Table view delegate
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    // Navigation logic may go here. Create and push another view controller.
+    
+    DetailWineListViewController *detailWineListViewController = [[DetailWineListViewController alloc] initWithNibName:@"DetailWineListViewController" bundle:nil];
+    detailWineListViewController.title = @"Détails";
+    
     Wine *selectedWine = [_arrayOfWines objectAtIndex:indexPath.row];
-    DetailWineListViewController *detailWineListViewController = [[DetailWineListViewController alloc]initWithNibName:@"DetailWineListViewController" bundle:nil];
-    detailWineListViewController.title = selectedWine.name;
     detailWineListViewController.selectedWine = selectedWine;
-    [self.navigationController pushViewController:detailWineListViewController animated:YES];  
+    // ...
+    // Pass the selected object to the new view controller.
+    
+    
+    [self.navigationController pushViewController:detailWineListViewController animated:YES];
+    
 }
 
 // 4) implement protocol
@@ -119,16 +131,16 @@
     for (NSDictionary *dic in object)
     {
         // Create a new contact
-        Wine *w = [Wine new];
+        Wine *o = [Wine new];
         
         // Set its properties from JSON 'object'
-        w.name = [dic objectForKey:@"name"];
-        w.year = [dic objectForKey:@"year"];
-        w.details = [dic objectForKey:@"details"];
-        w.label = [dic objectForKey:@"label"];
+        o.name = [dic objectForKey:@"name"];
+        o.year = [dic objectForKey:@"year"];
+        o.details = [dic objectForKey:@"details"];
+        o.label = [dic objectForKey:@"label"];
         
         // Add it to the array
-        [_arrayOfWines addObject:w];
+        [_arrayOfWines addObject:o];
     }
     
     // Just for fun, sort the array
@@ -146,3 +158,7 @@
 }
 
 @end
+
+
+
+

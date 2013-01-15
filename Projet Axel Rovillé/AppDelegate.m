@@ -7,9 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "WineListViewController.h"
 #import "CoursViewController.h"
-#import "OrdersListViewController.h"
 #import "WineLoadViewController.h"
 //#import <FacebookSDK/FacebookSDK.h>
 //#import "SCLoginViewController.h"
@@ -39,20 +37,14 @@
     CoursViewController *coursViewController = [[CoursViewController alloc] initWithNibName:@"CoursViewController" bundle:nil];
     coursViewController.title = @"Cours";
     
-    OrdersListViewController *ordersListViewController = [[OrdersListViewController alloc] initWithNibName:@"OrdersListViewController" bundle:nil];
-    ordersListViewController.title = @"Commandes";
-    UINavigationController *ordersNavigationController = [[UINavigationController alloc] initWithRootViewController:ordersListViewController];
-    ordersNavigationController.title = @"Commandes";
+//    OrdersListViewController *ordersListViewController = [[OrdersListViewController alloc] initWithNibName:@"OrdersListViewController" bundle:nil];
+//    ordersListViewController.title = @"Commandes";
+//    UINavigationController *ordersNavigationController = [[UINavigationController alloc] initWithRootViewController:ordersListViewController];
+//    ordersNavigationController.title = @"Commandes";
     
-    _tabBarController.viewControllers = [NSArray arrayWithObjects:/*_dataListViewController,*/homeNavigationController, wineListNavigationController, coursViewController, ordersNavigationController, nil];
-    
-    
-    
-    // Override point for customization after application launch.
-    self.window.backgroundColor = [UIColor whiteColor];
-    //_dataListViewController = [[DataListViewController alloc] initWithStyle:UITableViewStylePlain];
-    //navigationController = [[UINavigationController alloc] initWithRootViewController:_dataListViewController];
-    //[navigationController setViewControllers:_navController];
+    _tabBarController.viewControllers = [NSArray arrayWithObjects:/*_dataListViewController,*/homeNavigationController, wineListNavigationController, coursViewController/*, ordersNavigationController*/, nil];
+
+    self.window.backgroundColor = [UIColor whiteColor];;
      [_window setRootViewController:_tabBarController];
      
     [self.window makeKeyAndVisible];

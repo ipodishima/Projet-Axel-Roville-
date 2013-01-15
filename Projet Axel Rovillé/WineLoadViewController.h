@@ -1,21 +1,17 @@
 //
-//  WineLoadViewController.h
-//  MSToolTips
+//  OrdersListViewController.h
+//  Projet Axel Rovillé
 //
-//  Created by Marian Paul on 24/10/12.
-//  Copyright (c) 2012 Marian Paul. All rights reserved.
+//  Created by Axel Rovillé on 15/01/13.
+//  Copyright (c) 2013 Axel Rovillé. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
-
-// 2)
-// import Download manager
 #import "DownloadManager.h"
 
-@interface WineLoadViewController : UITableViewController <DownloadDelegate> // 3) adopt the DownloadDelegate protocol
+@interface WineLoadViewController : UITableViewController <DownloadDelegate>
 {
-    UIActivityIndicatorView *_activity;
     NSMutableArray *_arrayOfWines;
+    UIActivityIndicatorView *_activity;
 }
-
 @end

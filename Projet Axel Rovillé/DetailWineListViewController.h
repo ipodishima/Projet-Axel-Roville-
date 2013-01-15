@@ -1,8 +1,8 @@
 //
-//  DetailWineListViewController.h
+//  OrdersViewController.h
 //  Projet Axel Rovillé
 //
-//  Created by Axel Rovillé on 14/01/13.
+//  Created by Axel Rovillé on 13/01/13.
 //  Copyright (c) 2013 Axel Rovillé. All rights reserved.
 //
 
@@ -11,12 +11,15 @@
 
 @interface DetailWineListViewController : UIViewController
 {
+    UIButton *orderItem;
     Wine *selectedWineToShowDetails;
-    UITextView *_detailsLabel;
-    UIImageView *_labelImageView;
-    UIButton *fbShareButton;
+    UIImageView *labelView;
+    __weak IBOutlet UILabel *resume;
+    __weak IBOutlet UITextView *details;
+    int nbOfOrders;
 }
 
 @property (nonatomic, strong) Wine *selectedWine;
+
 
 @end

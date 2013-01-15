@@ -2,13 +2,11 @@
 //  OrdersViewController.m
 //  Projet Axel Rovillé
 //
-//  Created by Axel Rovillé on 13/01/13.
+//  Created by Axel Rovillé on 15/01/13.
 //  Copyright (c) 2013 Axel Rovillé. All rights reserved.
 //
 
 #import "OrdersViewController.h"
-#import "Order.h"
-#import "OrdersListViewController.h"
 
 @interface OrdersViewController ()
 
@@ -16,11 +14,11 @@
 
 @implementation OrdersViewController
 
-@synthesize selectedOrder = _selectedOrder;
+@synthesize arrayOfOrders;
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+- (id)initWithStyle:(UITableViewStyle)style
 {
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    self = [super initWithStyle:style];
     if (self) {
         // Custom initialization
     }
@@ -30,43 +28,52 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-    //Order *selectedOrder = [_arrayOfOrders objectAtIndex:[indexPath row]];
-    // Do any additional setup after loading the view from its nib.
-    fbShareButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    fbShareButton.frame = CGRectMake(10, 10, 150, 40);
-    [fbShareButton setTitle:@"Commander" forState:UIControlStateNormal];
-    [fbShareButton addTarget:self action:@selector(shareOnFb:) forControlEvents:(UIControlEvents)UIControlEventTouchUpInside];
-    
-    orderDetails = [[UITextView alloc] initWithFrame:CGRectMake(0, 160, 310, 200)];
-    [orderDetails setFont:[UIFont fontWithName:@"ArialMT" size:12.0]];
-    orderDetails.textAlignment = NSTextAlignmentJustified;
-    orderDetails.editable = FALSE;
-    orderDetails.text = [NSString stringWithFormat:@"%@\n\n",_selectedOrder.details];
-    
-    resume = [[UITextView alloc] initWithFrame:CGRectMake(0, 60, 320, 100)];
-    [resume setFont:[UIFont fontWithName:@"Arial-BoldMT" size:16.0]];
-    resume.textAlignment = NSTextAlignmentJustified;
-    resume.editable = FALSE;
-    resume.text = [NSString stringWithFormat:@"%@ \n%@ \nPrix: 12,50€", _selectedOrder.name, _selectedOrder.year];
-    UIImage *orderLabel = [UIImage imageNamed:_selectedOrder.label];
-    UIImageView *orderLabelView = [[UIImageView alloc] initWithImage:orderLabel];
-    orderLabelView.frame = CGRectMake(200, 0, 120, 120);
-    
-    
-    [self.view addSubview:fbShareButton];
-    [self.view addSubview:orderDetails];
-    [self.view addSubview:resume];
-    [self.view addSubview:orderLabelView];
+    arrayOfOrders = [[NSMutableArray alloc] init];
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
 }
 
-- (void)shareOnFb:(id)sender    {
-    orderDetails.text = @"On a cliqué!";
+#pragma mark - Table view data source
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return [arrayOfOrders count];
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString *CellIdentifier = @"Cell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+    }
+    
+    // Configure the cell...
+    
+    return cell;
+}
+
+
+#pragma mark - Table view delegate
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    // Navigation logic may go here. Create and push another view controller.
+    /*
+     <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
+     // ...
+     // Pass the selected object to the new view controller.
+     [self.navigationController pushViewController:detailViewController animated:YES];
+     */
 }
 
 @end

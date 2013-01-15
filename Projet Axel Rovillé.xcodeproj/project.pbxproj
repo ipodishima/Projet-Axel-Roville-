@@ -29,8 +29,6 @@
 		FA34522316A1DD3D00754720 /* Projet_Axel_Roville_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = FA34522216A1DD3D00754720 /* Projet_Axel_Roville_Tests.m */; };
 		FA34524E16A2DFA100754720 /* CoursViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA34524C16A2DFA000754720 /* CoursViewController.m */; };
 		FA34524F16A2DFA100754720 /* CoursViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA34524D16A2DFA100754720 /* CoursViewController.xib */; };
-		FA34525316A2DFC300754720 /* OrdersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA34525116A2DFC300754720 /* OrdersViewController.m */; };
-		FA34525416A2DFC300754720 /* OrdersViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA34525216A2DFC300754720 /* OrdersViewController.xib */; };
 		FA34525916A310B200754720 /* fakeDataListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA34525816A310B200754720 /* fakeDataListViewController.m */; };
 		FA5C550816A31E15001F006F /* DetailListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA5C550616A31E15001F006F /* DetailListViewController.m */; };
 		FA5C550916A31E15001F006F /* DetailListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA5C550716A31E15001F006F /* DetailListViewController.xib */; };
@@ -56,9 +54,17 @@
 		FA9224AD16A57B5000D65BA6 /* SCLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA9224AB16A57B5000D65BA6 /* SCLoginViewController.xib */; };
 		FA9224AF16A5866C00D65BA6 /* lo.png in Resources */ = {isa = PBXBuildFile; fileRef = FA9224AE16A5866C00D65BA6 /* lo.png */; };
 		FA9224B216A5888C00D65BA6 /* SCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA9224B116A5888C00D65BA6 /* SCViewController.m */; };
-		FA9224B616A58C8F00D65BA6 /* OrdersListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA9224B416A58C8F00D65BA6 /* OrdersListViewController.m */; };
-		FA9224B716A58C8F00D65BA6 /* OrdersListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA9224B516A58C8F00D65BA6 /* OrdersListViewController.xib */; };
-		FA9224BA16A58DFB00D65BA6 /* Order.m in Sources */ = {isa = PBXBuildFile; fileRef = FA9224B916A58DFB00D65BA6 /* Order.m */; };
+		FA9224BE16A5EAFA00D65BA6 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA9224BC16A5EAF700D65BA6 /* ProfileViewController.m */; };
+		FA9224BF16A5EAFA00D65BA6 /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA9224BD16A5EAF800D65BA6 /* ProfileViewController.xib */; };
+		FA9224C316A5F22900D65BA6 /* HelloYouViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA9224C116A5F22800D65BA6 /* HelloYouViewController.m */; };
+		FA9224C416A5F22900D65BA6 /* HelloYouViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA9224C216A5F22900D65BA6 /* HelloYouViewController.xib */; };
+		FA9224C816A605A700D65BA6 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA9224C616A605A500D65BA6 /* AboutViewController.m */; };
+		FA9224C916A605A700D65BA6 /* AboutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA9224C716A605A600D65BA6 /* AboutViewController.xib */; };
+		FA9224D216A6106F00D65BA6 /* OrdersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA9224D016A6106D00D65BA6 /* OrdersViewController.m */; };
+		FA9224D316A6106F00D65BA6 /* OrdersViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA9224D116A6106E00D65BA6 /* OrdersViewController.xib */; };
+		FA9224D616A611BE00D65BA6 /* Orders.m in Sources */ = {isa = PBXBuildFile; fileRef = FA9224D516A611BC00D65BA6 /* Orders.m */; };
+		FA9224DA16A612D800D65BA6 /* DetailOrderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA9224D816A612D600D65BA6 /* DetailOrderViewController.m */; };
+		FA9224DB16A612D800D65BA6 /* DetailOrderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA9224D916A612D700D65BA6 /* DetailOrderViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,9 +106,6 @@
 		FA34524B16A2DFA000754720 /* CoursViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoursViewController.h; sourceTree = "<group>"; };
 		FA34524C16A2DFA000754720 /* CoursViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoursViewController.m; sourceTree = "<group>"; };
 		FA34524D16A2DFA100754720 /* CoursViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CoursViewController.xib; sourceTree = "<group>"; };
-		FA34525016A2DFC300754720 /* OrdersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrdersViewController.h; sourceTree = "<group>"; };
-		FA34525116A2DFC300754720 /* OrdersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrdersViewController.m; sourceTree = "<group>"; };
-		FA34525216A2DFC300754720 /* OrdersViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OrdersViewController.xib; sourceTree = "<group>"; };
 		FA34525716A310B100754720 /* fakeDataListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fakeDataListViewController.h; sourceTree = "<group>"; };
 		FA34525816A310B200754720 /* fakeDataListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = fakeDataListViewController.m; sourceTree = "<group>"; };
 		FA5C550516A31E15001F006F /* DetailListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailListViewController.h; sourceTree = "<group>"; };
@@ -138,11 +141,23 @@
 		FA9224AE16A5866C00D65BA6 /* lo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lo.png; sourceTree = "<group>"; };
 		FA9224B016A5888C00D65BA6 /* SCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCViewController.h; sourceTree = "<group>"; };
 		FA9224B116A5888C00D65BA6 /* SCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCViewController.m; sourceTree = "<group>"; };
-		FA9224B316A58C8F00D65BA6 /* OrdersListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrdersListViewController.h; sourceTree = "<group>"; };
-		FA9224B416A58C8F00D65BA6 /* OrdersListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrdersListViewController.m; sourceTree = "<group>"; };
-		FA9224B516A58C8F00D65BA6 /* OrdersListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OrdersListViewController.xib; sourceTree = "<group>"; };
-		FA9224B816A58DFB00D65BA6 /* Order.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Order.h; sourceTree = "<group>"; };
-		FA9224B916A58DFB00D65BA6 /* Order.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Order.m; sourceTree = "<group>"; };
+		FA9224BB16A5EAF700D65BA6 /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
+		FA9224BC16A5EAF700D65BA6 /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
+		FA9224BD16A5EAF800D65BA6 /* ProfileViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
+		FA9224C016A5F22800D65BA6 /* HelloYouViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelloYouViewController.h; sourceTree = "<group>"; };
+		FA9224C116A5F22800D65BA6 /* HelloYouViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelloYouViewController.m; sourceTree = "<group>"; };
+		FA9224C216A5F22900D65BA6 /* HelloYouViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HelloYouViewController.xib; sourceTree = "<group>"; };
+		FA9224C516A605A500D65BA6 /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
+		FA9224C616A605A500D65BA6 /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
+		FA9224C716A605A600D65BA6 /* AboutViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AboutViewController.xib; sourceTree = "<group>"; };
+		FA9224CF16A6106C00D65BA6 /* OrdersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrdersViewController.h; sourceTree = "<group>"; };
+		FA9224D016A6106D00D65BA6 /* OrdersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrdersViewController.m; sourceTree = "<group>"; };
+		FA9224D116A6106E00D65BA6 /* OrdersViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OrdersViewController.xib; sourceTree = "<group>"; };
+		FA9224D416A611BB00D65BA6 /* Orders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Orders.h; sourceTree = "<group>"; };
+		FA9224D516A611BC00D65BA6 /* Orders.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Orders.m; sourceTree = "<group>"; };
+		FA9224D716A612D400D65BA6 /* DetailOrderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailOrderViewController.h; sourceTree = "<group>"; };
+		FA9224D816A612D600D65BA6 /* DetailOrderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailOrderViewController.m; sourceTree = "<group>"; };
+		FA9224D916A612D700D65BA6 /* DetailOrderViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailOrderViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -223,6 +238,8 @@
 				FA5C551516A32FB8001F006F /* chateauyquem1995.jpeg */,
 				FA5C551616A32FB8001F006F /* leovillebarton1990.jpeg */,
 				FA5C551716A32FB8001F006F /* chateaulatour1990.jpeg */,
+				FA34525716A310B100754720 /* fakeDataListViewController.h */,
+				FA34525816A310B200754720 /* fakeDataListViewController.m */,
 				FA5C550516A31E15001F006F /* DetailListViewController.h */,
 				FA5C550616A31E15001F006F /* DetailListViewController.m */,
 				FA5C550716A31E15001F006F /* DetailListViewController.xib */,
@@ -233,8 +250,6 @@
 				FA34524B16A2DFA000754720 /* CoursViewController.h */,
 				FA34524C16A2DFA000754720 /* CoursViewController.m */,
 				FA34524D16A2DFA100754720 /* CoursViewController.xib */,
-				FA34525716A310B100754720 /* fakeDataListViewController.h */,
-				FA34525816A310B200754720 /* fakeDataListViewController.m */,
 				FA5C552D16A34212001F006F /* WineLoadViewController.h */,
 				FA5C552E16A34213001F006F /* WineLoadViewController.m */,
 				FA5C552F16A34213001F006F /* WineLoadViewController.xib */,
@@ -243,14 +258,23 @@
 				FA5C553716A42CAE001F006F /* DetailWineListViewController.xib */,
 				FA5C551B16A330E3001F006F /* Wine.h */,
 				FA5C551C16A330E3001F006F /* Wine.m */,
-				FA9224B316A58C8F00D65BA6 /* OrdersListViewController.h */,
-				FA9224B416A58C8F00D65BA6 /* OrdersListViewController.m */,
-				FA9224B516A58C8F00D65BA6 /* OrdersListViewController.xib */,
-				FA34525016A2DFC300754720 /* OrdersViewController.h */,
-				FA34525116A2DFC300754720 /* OrdersViewController.m */,
-				FA34525216A2DFC300754720 /* OrdersViewController.xib */,
-				FA9224B816A58DFB00D65BA6 /* Order.h */,
-				FA9224B916A58DFB00D65BA6 /* Order.m */,
+				FA9224BB16A5EAF700D65BA6 /* ProfileViewController.h */,
+				FA9224BC16A5EAF700D65BA6 /* ProfileViewController.m */,
+				FA9224BD16A5EAF800D65BA6 /* ProfileViewController.xib */,
+				FA9224C016A5F22800D65BA6 /* HelloYouViewController.h */,
+				FA9224C116A5F22800D65BA6 /* HelloYouViewController.m */,
+				FA9224C216A5F22900D65BA6 /* HelloYouViewController.xib */,
+				FA9224C516A605A500D65BA6 /* AboutViewController.h */,
+				FA9224C616A605A500D65BA6 /* AboutViewController.m */,
+				FA9224C716A605A600D65BA6 /* AboutViewController.xib */,
+				FA9224CF16A6106C00D65BA6 /* OrdersViewController.h */,
+				FA9224D016A6106D00D65BA6 /* OrdersViewController.m */,
+				FA9224D116A6106E00D65BA6 /* OrdersViewController.xib */,
+				FA9224D416A611BB00D65BA6 /* Orders.h */,
+				FA9224D516A611BC00D65BA6 /* Orders.m */,
+				FA9224D716A612D400D65BA6 /* DetailOrderViewController.h */,
+				FA9224D816A612D600D65BA6 /* DetailOrderViewController.m */,
+				FA9224D916A612D700D65BA6 /* DetailOrderViewController.xib */,
 			);
 			path = "Projet Axel Rovillé";
 			sourceTree = "<group>";
@@ -390,7 +414,6 @@
 				FA34520C16A1DD3C00754720 /* Default@2x.png in Resources */,
 				FA34520E16A1DD3C00754720 /* Default-568h@2x.png in Resources */,
 				FA34524F16A2DFA100754720 /* CoursViewController.xib in Resources */,
-				FA34525416A2DFC300754720 /* OrdersViewController.xib in Resources */,
 				FA5C550916A31E15001F006F /* DetailListViewController.xib in Resources */,
 				FA5C551816A32FB8001F006F /* chateauyquem1995.jpeg in Resources */,
 				FA5C551916A32FB8001F006F /* leovillebarton1990.jpeg in Resources */,
@@ -409,7 +432,11 @@
 				FA9224A716A57B0B00D65BA6 /* Icon@2x.png in Resources */,
 				FA9224AD16A57B5000D65BA6 /* SCLoginViewController.xib in Resources */,
 				FA9224AF16A5866C00D65BA6 /* lo.png in Resources */,
-				FA9224B716A58C8F00D65BA6 /* OrdersListViewController.xib in Resources */,
+				FA9224BF16A5EAFA00D65BA6 /* ProfileViewController.xib in Resources */,
+				FA9224C416A5F22900D65BA6 /* HelloYouViewController.xib in Resources */,
+				FA9224C916A605A700D65BA6 /* AboutViewController.xib in Resources */,
+				FA9224D316A6106F00D65BA6 /* OrdersViewController.xib in Resources */,
+				FA9224DB16A612D800D65BA6 /* DetailOrderViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -447,7 +474,6 @@
 				FA34520416A1DD3C00754720 /* main.m in Sources */,
 				FA34520816A1DD3C00754720 /* AppDelegate.m in Sources */,
 				FA34524E16A2DFA100754720 /* CoursViewController.m in Sources */,
-				FA34525316A2DFC300754720 /* OrdersViewController.m in Sources */,
 				FA34525916A310B200754720 /* fakeDataListViewController.m in Sources */,
 				FA5C550816A31E15001F006F /* DetailListViewController.m in Sources */,
 				FA5C551D16A330E4001F006F /* Wine.m in Sources */,
@@ -456,8 +482,12 @@
 				FA5C553016A34213001F006F /* WineLoadViewController.m in Sources */,
 				FA5C553816A42CAE001F006F /* DetailWineListViewController.m in Sources */,
 				FA9224AC16A57B5000D65BA6 /* SCLoginViewController.m in Sources */,
-				FA9224B616A58C8F00D65BA6 /* OrdersListViewController.m in Sources */,
-				FA9224BA16A58DFB00D65BA6 /* Order.m in Sources */,
+				FA9224BE16A5EAFA00D65BA6 /* ProfileViewController.m in Sources */,
+				FA9224C316A5F22900D65BA6 /* HelloYouViewController.m in Sources */,
+				FA9224C816A605A700D65BA6 /* AboutViewController.m in Sources */,
+				FA9224D216A6106F00D65BA6 /* OrdersViewController.m in Sources */,
+				FA9224D616A611BE00D65BA6 /* Orders.m in Sources */,
+				FA9224DA16A612D800D65BA6 /* DetailOrderViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

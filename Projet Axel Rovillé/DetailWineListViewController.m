@@ -1,8 +1,8 @@
 //
-//  DetailWineListViewController.m
+//  OrdersViewController.m
 //  Projet Axel Rovillé
 //
-//  Created by Axel Rovillé on 14/01/13.
+//  Created by Axel Rovillé on 13/01/13.
 //  Copyright (c) 2013 Axel Rovillé. All rights reserved.
 //
 
@@ -15,6 +15,7 @@
 @end
 
 @implementation DetailWineListViewController
+
 @synthesize selectedWine = _selectedWine;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -28,30 +29,32 @@
 
 - (void)viewDidLoad
 {
-    //On affiche l'étiquette du vin
-    
-    selectedWineToShowDetails = _selectedWine;
-    UIImage *selectedWineLabel = [UIImage imageNamed:_selectedWine.label];
-    _labelImageView = [[UIImageView alloc] initWithImage:selectedWineLabel];
-    _labelImageView.frame = CGRectMake(80, 0, 160, 150);
-    
-    //On affiche la description du vin
-    _detailsLabel = [[UITextView alloc] initWithFrame:CGRectMake(10, 160, 300, 300)];
-    [_detailsLabel setFont:[UIFont fontWithName:@"ArialMT" size:15.0]];
-    _detailsLabel.textAlignment = NSTextAlignmentJustified;
-    _detailsLabel.editable = FALSE;
-    _detailsLabel.text = _selectedWine.details;
-  
-    //On ajoute ces vues à la vue principale
-    [self.view addSubview:_labelImageView];
-    [self.view addSubview:_detailsLabel];
     [super viewDidLoad];
+
+    details.editable = FALSE;
+    details.text = [NSString stringWithFormat:@"%@\n\n",_selectedWine.details];
+    
+    [resume setFont:[UIFont fontWithName:@"Arial-BoldMT" size:16.0]];
+    resume.text = [NSString stringWithFormat:@"%@ \n%@ \nPrix: 12,50€", _selectedWine.name, _selectedWine.year];
+    labelView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:_selectedWine.label]];
+    labelView.frame = CGRectMake(20, 20, 100, 100);
+    orderItem = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    [orderItem addTarget:self action:@selector(addOrder:) forControlEvents:(UIControlEvents)UIControlEventTouchUpInside];
+    orderItem.frame = CGRectMake(80, 320, 160, 40);
+    [self.view addSubview:labelView];
+    [self.view addSubview:orderItem];
+    
+    
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+}
+
+- (void)addOrder:(id)sender    {
+    nbOfOrders++;
+    self.navigationController.tabBarItem.badgeValue = [NSString stringWithFormat:@"%d",nbOfOrders];
 }
 
 @end

@@ -2,22 +2,18 @@
 //  OrdersViewController.h
 //  Projet Axel Rovillé
 //
-//  Created by Axel Rovillé on 13/01/13.
+//  Created by Axel Rovillé on 15/01/13.
 //  Copyright (c) 2013 Axel Rovillé. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
-#import "Order.h"
+#import "Orders.h"
 
-@interface OrdersViewController : UIViewController
+@interface OrdersViewController : UITableViewController
 {
-    IBOutlet UIButton *fbShareButton;
-    UITextView *orderDetails;
-    UITextView *resume;
-    Order *selectedOrderToShowDetails;
+   // NSMutableArray *arrayOfOrders;
 }
 
-@property (nonatomic, strong) Order *selectedOrder;
-
+@property (nonatomic, strong) NSMutableArray *arrayOfOrders;
 
 @end

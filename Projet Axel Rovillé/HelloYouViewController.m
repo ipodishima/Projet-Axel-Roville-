@@ -1,18 +1,20 @@
 //
-//  DetailListViewController.m
+//  HelloYouViewController.m
 //  Projet Axel Rovillé
 //
-//  Created by Axel Rovillé on 12/01/13.
+//  Created by Axel Rovillé on 15/01/13.
 //  Copyright (c) 2013 Axel Rovillé. All rights reserved.
 //
 
-#import "DetailListViewController.h"
+#import "HelloYouViewController.h"
 
-@interface DetailListViewController ()
+@interface HelloYouViewController ()
 
 @end
 
-@implementation DetailListViewController
+@implementation HelloYouViewController
+
+@synthesize name, firstname, bonjourLabel;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -27,6 +29,9 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    NSString *firstNameAndName = [NSString stringWithFormat:@"Bonjour %@ %@!", name, firstname];
+    bonjourLabel.text = firstNameAndName;
+    
 }
 
 - (void)didReceiveMemoryWarning
