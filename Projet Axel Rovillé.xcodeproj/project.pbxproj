@@ -45,6 +45,20 @@
 		FA5C553116A34213001F006F /* WineLoadViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA5C552F16A34213001F006F /* WineLoadViewController.xib */; };
 		FA5C553816A42CAE001F006F /* DetailWineListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA5C553616A42CAE001F006F /* DetailWineListViewController.m */; };
 		FA5C553916A42CAE001F006F /* DetailWineListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA5C553716A42CAE001F006F /* DetailWineListViewController.xib */; };
+		FA92249D16A57AE600D65BA6 /* action-eating.png in Resources */ = {isa = PBXBuildFile; fileRef = FA92249916A57AE600D65BA6 /* action-eating.png */; };
+		FA92249E16A57AE600D65BA6 /* action-location.png in Resources */ = {isa = PBXBuildFile; fileRef = FA92249A16A57AE600D65BA6 /* action-location.png */; };
+		FA92249F16A57AE600D65BA6 /* action-people.png in Resources */ = {isa = PBXBuildFile; fileRef = FA92249B16A57AE600D65BA6 /* action-people.png */; };
+		FA9224A016A57AE600D65BA6 /* facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = FA92249C16A57AE600D65BA6 /* facebook.png */; };
+		FA9224A516A57B0B00D65BA6 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = FA9224A216A57B0B00D65BA6 /* Icon-72.png */; };
+		FA9224A616A57B0B00D65BA6 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = FA9224A316A57B0B00D65BA6 /* Icon.png */; };
+		FA9224A716A57B0B00D65BA6 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FA9224A416A57B0B00D65BA6 /* Icon@2x.png */; };
+		FA9224AC16A57B5000D65BA6 /* SCLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA9224AA16A57B5000D65BA6 /* SCLoginViewController.m */; };
+		FA9224AD16A57B5000D65BA6 /* SCLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA9224AB16A57B5000D65BA6 /* SCLoginViewController.xib */; };
+		FA9224AF16A5866C00D65BA6 /* lo.png in Resources */ = {isa = PBXBuildFile; fileRef = FA9224AE16A5866C00D65BA6 /* lo.png */; };
+		FA9224B216A5888C00D65BA6 /* SCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA9224B116A5888C00D65BA6 /* SCViewController.m */; };
+		FA9224B616A58C8F00D65BA6 /* OrdersListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA9224B416A58C8F00D65BA6 /* OrdersListViewController.m */; };
+		FA9224B716A58C8F00D65BA6 /* OrdersListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA9224B516A58C8F00D65BA6 /* OrdersListViewController.xib */; };
+		FA9224BA16A58DFB00D65BA6 /* Order.m in Sources */ = {isa = PBXBuildFile; fileRef = FA9224B916A58DFB00D65BA6 /* Order.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -111,6 +125,24 @@
 		FA5C553516A42CAD001F006F /* DetailWineListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailWineListViewController.h; sourceTree = "<group>"; };
 		FA5C553616A42CAE001F006F /* DetailWineListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailWineListViewController.m; sourceTree = "<group>"; };
 		FA5C553716A42CAE001F006F /* DetailWineListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailWineListViewController.xib; sourceTree = "<group>"; };
+		FA92249916A57AE600D65BA6 /* action-eating.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "action-eating.png"; sourceTree = "<group>"; };
+		FA92249A16A57AE600D65BA6 /* action-location.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "action-location.png"; sourceTree = "<group>"; };
+		FA92249B16A57AE600D65BA6 /* action-people.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "action-people.png"; sourceTree = "<group>"; };
+		FA92249C16A57AE600D65BA6 /* facebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facebook.png; sourceTree = "<group>"; };
+		FA9224A216A57B0B00D65BA6 /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
+		FA9224A316A57B0B00D65BA6 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		FA9224A416A57B0B00D65BA6 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		FA9224A916A57B5000D65BA6 /* SCLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCLoginViewController.h; sourceTree = "<group>"; };
+		FA9224AA16A57B5000D65BA6 /* SCLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCLoginViewController.m; sourceTree = "<group>"; };
+		FA9224AB16A57B5000D65BA6 /* SCLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SCLoginViewController.xib; sourceTree = "<group>"; };
+		FA9224AE16A5866C00D65BA6 /* lo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lo.png; sourceTree = "<group>"; };
+		FA9224B016A5888C00D65BA6 /* SCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCViewController.h; sourceTree = "<group>"; };
+		FA9224B116A5888C00D65BA6 /* SCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCViewController.m; sourceTree = "<group>"; };
+		FA9224B316A58C8F00D65BA6 /* OrdersListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrdersListViewController.h; sourceTree = "<group>"; };
+		FA9224B416A58C8F00D65BA6 /* OrdersListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrdersListViewController.m; sourceTree = "<group>"; };
+		FA9224B516A58C8F00D65BA6 /* OrdersListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OrdersListViewController.xib; sourceTree = "<group>"; };
+		FA9224B816A58DFB00D65BA6 /* Order.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Order.h; sourceTree = "<group>"; };
+		FA9224B916A58DFB00D65BA6 /* Order.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Order.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,6 +212,8 @@
 		FA3451FD16A1DD3B00754720 /* Projet Axel Rovillé */ = {
 			isa = PBXGroup;
 			children = (
+				FA9224AE16A5866C00D65BA6 /* lo.png */,
+				FA9224A816A57B2300D65BA6 /* Facebook */,
 				FA5C552316A334BD001F006F /* DownloadDelegate.h */,
 				FA5C552416A334BD001F006F /* DownloadManager.h */,
 				FA5C552516A334BD001F006F /* DownloadManager.m */,
@@ -194,23 +228,29 @@
 				FA5C550716A31E15001F006F /* DetailListViewController.xib */,
 				FA34520616A1DD3C00754720 /* AppDelegate.h */,
 				FA34520716A1DD3C00754720 /* AppDelegate.m */,
+				FA92249816A57AE600D65BA6 /* images */,
 				FA3451FE16A1DD3C00754720 /* Supporting Files */,
 				FA34524B16A2DFA000754720 /* CoursViewController.h */,
 				FA34524C16A2DFA000754720 /* CoursViewController.m */,
 				FA34524D16A2DFA100754720 /* CoursViewController.xib */,
-				FA34525016A2DFC300754720 /* OrdersViewController.h */,
-				FA34525116A2DFC300754720 /* OrdersViewController.m */,
-				FA34525216A2DFC300754720 /* OrdersViewController.xib */,
 				FA34525716A310B100754720 /* fakeDataListViewController.h */,
 				FA34525816A310B200754720 /* fakeDataListViewController.m */,
-				FA5C551B16A330E3001F006F /* Wine.h */,
-				FA5C551C16A330E3001F006F /* Wine.m */,
 				FA5C552D16A34212001F006F /* WineLoadViewController.h */,
 				FA5C552E16A34213001F006F /* WineLoadViewController.m */,
 				FA5C552F16A34213001F006F /* WineLoadViewController.xib */,
 				FA5C553516A42CAD001F006F /* DetailWineListViewController.h */,
 				FA5C553616A42CAE001F006F /* DetailWineListViewController.m */,
 				FA5C553716A42CAE001F006F /* DetailWineListViewController.xib */,
+				FA5C551B16A330E3001F006F /* Wine.h */,
+				FA5C551C16A330E3001F006F /* Wine.m */,
+				FA9224B316A58C8F00D65BA6 /* OrdersListViewController.h */,
+				FA9224B416A58C8F00D65BA6 /* OrdersListViewController.m */,
+				FA9224B516A58C8F00D65BA6 /* OrdersListViewController.xib */,
+				FA34525016A2DFC300754720 /* OrdersViewController.h */,
+				FA34525116A2DFC300754720 /* OrdersViewController.m */,
+				FA34525216A2DFC300754720 /* OrdersViewController.xib */,
+				FA9224B816A58DFB00D65BA6 /* Order.h */,
+				FA9224B916A58DFB00D65BA6 /* Order.m */,
 			);
 			path = "Projet Axel Rovillé";
 			sourceTree = "<group>";
@@ -246,6 +286,32 @@
 				FA34521E16A1DD3C00754720 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FA92249816A57AE600D65BA6 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				FA9224A216A57B0B00D65BA6 /* Icon-72.png */,
+				FA9224A316A57B0B00D65BA6 /* Icon.png */,
+				FA9224A416A57B0B00D65BA6 /* Icon@2x.png */,
+				FA92249916A57AE600D65BA6 /* action-eating.png */,
+				FA92249A16A57AE600D65BA6 /* action-location.png */,
+				FA92249B16A57AE600D65BA6 /* action-people.png */,
+				FA92249C16A57AE600D65BA6 /* facebook.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		FA9224A816A57B2300D65BA6 /* Facebook */ = {
+			isa = PBXGroup;
+			children = (
+				FA9224A916A57B5000D65BA6 /* SCLoginViewController.h */,
+				FA9224AA16A57B5000D65BA6 /* SCLoginViewController.m */,
+				FA9224AB16A57B5000D65BA6 /* SCLoginViewController.xib */,
+				FA9224B016A5888C00D65BA6 /* SCViewController.h */,
+				FA9224B116A5888C00D65BA6 /* SCViewController.m */,
+			);
+			name = Facebook;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -334,6 +400,16 @@
 				FA5C553916A42CAE001F006F /* DetailWineListViewController.xib in Resources */,
 				FA22850916A48EC200C6B048 /* FacebookSDKResources.bundle in Resources */,
 				FA22850B16A48ED100C6B048 /* FBUserSettingsViewResources.bundle in Resources */,
+				FA92249D16A57AE600D65BA6 /* action-eating.png in Resources */,
+				FA92249E16A57AE600D65BA6 /* action-location.png in Resources */,
+				FA92249F16A57AE600D65BA6 /* action-people.png in Resources */,
+				FA9224A016A57AE600D65BA6 /* facebook.png in Resources */,
+				FA9224A516A57B0B00D65BA6 /* Icon-72.png in Resources */,
+				FA9224A616A57B0B00D65BA6 /* Icon.png in Resources */,
+				FA9224A716A57B0B00D65BA6 /* Icon@2x.png in Resources */,
+				FA9224AD16A57B5000D65BA6 /* SCLoginViewController.xib in Resources */,
+				FA9224AF16A5866C00D65BA6 /* lo.png in Resources */,
+				FA9224B716A58C8F00D65BA6 /* OrdersListViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -379,6 +455,9 @@
 				FA5C552916A334BE001F006F /* DownloadOperation.m in Sources */,
 				FA5C553016A34213001F006F /* WineLoadViewController.m in Sources */,
 				FA5C553816A42CAE001F006F /* DetailWineListViewController.m in Sources */,
+				FA9224AC16A57B5000D65BA6 /* SCLoginViewController.m in Sources */,
+				FA9224B616A58C8F00D65BA6 /* OrdersListViewController.m in Sources */,
+				FA9224BA16A58DFB00D65BA6 /* Order.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -387,6 +466,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA34522316A1DD3D00754720 /* Projet_Axel_Roville_Tests.m in Sources */,
+				FA9224B216A5888C00D65BA6 /* SCViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

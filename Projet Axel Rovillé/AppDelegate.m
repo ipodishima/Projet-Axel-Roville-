@@ -9,14 +9,16 @@
 #import "AppDelegate.h"
 #import "WineListViewController.h"
 #import "CoursViewController.h"
-#import "OrdersViewController.h"
+#import "OrdersListViewController.h"
 #import "WineLoadViewController.h"
+//#import <FacebookSDK/FacebookSDK.h>
+//#import "SCLoginViewController.h"
 
 @implementation AppDelegate
 
 @synthesize window = _window;
 @synthesize tabBarController = _tabBarController;
- 
+//@synthesize fbNavController = _fbNavController;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
@@ -28,25 +30,21 @@
     dataListViewController.title = @"Accueil";
     UINavigationController *homeNavigationController = [[UINavigationController alloc] initWithRootViewController: dataListViewController];
     homeNavigationController.title = @"Accueil";
-
-    
-    
-    //WineListViewController *wineListViewController = [[WineListViewController alloc] initWithNibName:@"WineListViewController" bundle:nil];
-    //wineListViewController.title = @"Vins";
     
     WineLoadViewController *wineLoadViewController = [[WineLoadViewController alloc] initWithNibName:@"WineLoadViewController" bundle:nil];
     wineLoadViewController.title = @"Vins";
     UINavigationController *wineListNavigationController = [[UINavigationController alloc] initWithRootViewController: wineLoadViewController];
     wineListNavigationController.title = @"Vins";
     
-    
     CoursViewController *coursViewController = [[CoursViewController alloc] initWithNibName:@"CoursViewController" bundle:nil];
     coursViewController.title = @"Cours";
     
-    OrdersViewController *ordersViewController = [[OrdersViewController alloc] initWithNibName:@"OrdersViewController" bundle:nil];
-    ordersViewController.title = @"Commandes";
+    OrdersListViewController *ordersListViewController = [[OrdersListViewController alloc] initWithNibName:@"OrdersListViewController" bundle:nil];
+    ordersListViewController.title = @"Commandes";
+    UINavigationController *ordersNavigationController = [[UINavigationController alloc] initWithRootViewController:ordersListViewController];
+    ordersNavigationController.title = @"Commandes";
     
-    _tabBarController.viewControllers = [NSArray arrayWithObjects:/*_dataListViewController,*/homeNavigationController, wineListNavigationController, coursViewController, ordersViewController, nil];
+    _tabBarController.viewControllers = [NSArray arrayWithObjects:/*_dataListViewController,*/homeNavigationController, wineListNavigationController, coursViewController, ordersNavigationController, nil];
     
     
     

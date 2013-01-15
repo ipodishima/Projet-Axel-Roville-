@@ -7,15 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Wine.h"
 
 @interface DetailWineListViewController : UIViewController
 {
+    Wine *selectedWineToShowDetails;
     UITextView *_detailsLabel;
     UIImageView *_labelImageView;
+    UIButton *fbShareButton;
 }
 
-
-@property (nonatomic, strong) NSString *detailsToDisplay;
-@property (nonatomic, strong) NSString *imageToDisplay;
+@property (nonatomic, strong) Wine *selectedWine;
 
 @end

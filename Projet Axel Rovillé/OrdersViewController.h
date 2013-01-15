@@ -7,7 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Order.h"
 
 @interface OrdersViewController : UIViewController
+{
+    IBOutlet UIButton *fbShareButton;
+    UITextView *orderDetails;
+    UITextView *resume;
+    Order *selectedOrderToShowDetails;
+}
+
+@property (nonatomic, strong) Order *selectedOrder;
+
 
 @end

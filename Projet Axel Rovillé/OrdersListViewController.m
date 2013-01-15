@@ -1,39 +1,44 @@
 //
-//  SampleLoadViewController.m
-//  MSToolTips
+//  OrdersListViewController.m
+//  Projet Axel Rovillé
 //
-//  Created by Marian Paul on 24/10/12.
-//  Copyright (c) 2012 Marian Paul. All rights reserved.
+//  Created by Axel Rovillé on 15/01/13.
+//  Copyright (c) 2013 Axel Rovillé. All rights reserved.
 //
 
-#import "WineLoadViewController.h"
-#import "Wine.h"
-#import "DetailWineListViewController.h"
+#import "OrdersListViewController.h"
+#import "Order.h"
+#import "OrdersViewController.h"
+//#import "SCLoginViewController.h"
+//#import "SCViewController.h"
 
-@interface WineLoadViewController ()
+#import "OrdersViewController.h"
+
+@interface OrdersListViewController ()
 
 @end
 
-@implementation WineLoadViewController
+@implementation OrdersListViewController
+
+- (id)initWithStyle:(UITableViewStyle)style
+{
+    self = [super initWithStyle:style];
+    if (self) {
+        // Custom initialization
+    }
+    return self;
+}
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     
-    // 1)
-    // Alloc the view which shows activity
     _activity = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
     // Set it to the right on navigation bar
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:_activity];
     
     // Load the JSON from the file
     [[DownloadManager shared] loadLocalFileName:@"vins" withDelegate:self];
-    
-    // If your app will be connected, then you just have to replace the previous line with
-    //
-    //     NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:yourURL];
-    //     [[DownloadManager shared] loadRequest:request withDelegate:self];
-    
 }
 
 - (void)didReceiveMemoryWarning
@@ -51,7 +56,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return [_arrayOfWines count];
+    return [_arrayOfOrders count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -63,26 +68,34 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
     }
     
-    // Get the wine for the row
-    Wine *w = [_arrayOfWines objectAtIndex:indexPath.row];
+    Order *o = [_arrayOfOrders objectAtIndex:indexPath.row];
     
-    // Display!
-    cell.textLabel.text = [NSString stringWithFormat:@"%@", w.name];
-    cell.detailTextLabel.text = [NSString stringWithFormat:@"%@", w.year];
-    cell.imageView.image = [UIImage imageNamed:w.label];
-
+    cell.textLabel.text = [NSString stringWithFormat:@"%@", o.name];
+    cell.detailTextLabel.text = [NSString stringWithFormat:@"%@     %d €", o.year, 12];
+    cell.imageView.image = [UIImage imageNamed:o.label];
+    
     return cell;
 }
+
+
 
 #pragma mark - Table view delegate
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    Wine *selectedWine = [_arrayOfWines objectAtIndex:indexPath.row];
-    DetailWineListViewController *detailWineListViewController = [[DetailWineListViewController alloc]initWithNibName:@"DetailWineListViewController" bundle:nil];
-    detailWineListViewController.title = selectedWine.name;
-    detailWineListViewController.selectedWine = selectedWine;
-    [self.navigationController pushViewController:detailWineListViewController animated:YES];  
+    // Navigation logic may go here. Create and push another view controller.
+    
+     OrdersViewController *ordersViewController = [[OrdersViewController alloc] initWithNibName:@"OrdersViewController" bundle:nil];
+     ordersViewController.title = @"Détails";
+    
+    Order *selectedOrder = [_arrayOfOrders objectAtIndex:indexPath.row];
+    ordersViewController.selectedOrder = selectedOrder;
+     // ...
+     // Pass the selected object to the new view controller.
+    
+    
+     [self.navigationController pushViewController:ordersViewController animated:YES];
+     
 }
 
 // 4) implement protocol
@@ -109,30 +122,30 @@
     
     // Now, we need to go through all the objects loaded in the JSON, parse it, and create new Objective-C objects
     // First, remove previous objects in instance array
-    [_arrayOfWines removeAllObjects];
+    [_arrayOfOrders removeAllObjects];
     
     // Allocate it if not already. This is called lazy loading. Remember, we are on mobile devices, where RAM use is really important
-    if (!_arrayOfWines)
-        _arrayOfWines = [NSMutableArray new];
+    if (!_arrayOfOrders)
+        _arrayOfOrders = [NSMutableArray new];
     
     // Now enumerate the json array
     for (NSDictionary *dic in object)
     {
         // Create a new contact
-        Wine *w = [Wine new];
+        Order *o = [Order new];
         
         // Set its properties from JSON 'object'
-        w.name = [dic objectForKey:@"name"];
-        w.year = [dic objectForKey:@"year"];
-        w.details = [dic objectForKey:@"details"];
-        w.label = [dic objectForKey:@"label"];
+        o.name = [dic objectForKey:@"name"];
+        o.year = [dic objectForKey:@"year"];
+        o.details = [dic objectForKey:@"details"];
+        o.label = [dic objectForKey:@"label"];
         
         // Add it to the array
-        [_arrayOfWines addObject:w];
+        [_arrayOfOrders addObject:o];
     }
     
     // Just for fun, sort the array
-    [_arrayOfWines sortUsingDescriptors:[NSArray arrayWithObject:[[NSSortDescriptor alloc] initWithKey:@"name" ascending:YES]]];
+    [_arrayOfOrders sortUsingDescriptors:[NSArray arrayWithObject:[[NSSortDescriptor alloc] initWithKey:@"name" ascending:YES]]];
     
     // Try these
     // [_arrayOfWines sortUsingDescriptors:[NSArray arrayWithObject:[[NSSortDescriptor alloc] initWithKey:@"lastName" ascending:YES]]];
@@ -146,3 +159,7 @@
 }
 
 @end
+
+
+
+

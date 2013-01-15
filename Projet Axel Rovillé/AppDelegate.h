@@ -15,7 +15,7 @@
    // fakeDataListViewController *_dataListViewController;
 }
 
-
+//@property (strong, nonatomic) UINavigationController *fbNavController;
 @property (strong, nonatomic) UIWindow *window;
 @property (nonatomic, strong) UITabBarController *tabBarController;
 

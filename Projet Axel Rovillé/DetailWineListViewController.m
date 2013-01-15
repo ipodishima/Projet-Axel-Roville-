@@ -15,8 +15,7 @@
 @end
 
 @implementation DetailWineListViewController
-@synthesize detailsToDisplay = _detailsToDisplay;
-@synthesize imageToDisplay = _imageToDisplay;
+@synthesize selectedWine = _selectedWine;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -30,18 +29,18 @@
 - (void)viewDidLoad
 {
     //On affiche l'étiquette du vin
-    UIImage *selectedWineLabel = [UIImage imageNamed:_imageToDisplay];
     
+    selectedWineToShowDetails = _selectedWine;
+    UIImage *selectedWineLabel = [UIImage imageNamed:_selectedWine.label];
     _labelImageView = [[UIImageView alloc] initWithImage:selectedWineLabel];
     _labelImageView.frame = CGRectMake(80, 0, 160, 150);
-
+    
     //On affiche la description du vin
-    CGRect labelRect = CGRectMake(10, 160, 300, 300);
-    _detailsLabel = [[UITextView alloc] initWithFrame:labelRect];
+    _detailsLabel = [[UITextView alloc] initWithFrame:CGRectMake(10, 160, 300, 300)];
     [_detailsLabel setFont:[UIFont fontWithName:@"ArialMT" size:15.0]];
     _detailsLabel.textAlignment = NSTextAlignmentJustified;
     _detailsLabel.editable = FALSE;
-    _detailsLabel.text = _detailsToDisplay;
+    _detailsLabel.text = _selectedWine.details;
   
     //On ajoute ces vues à la vue principale
     [self.view addSubview:_labelImageView];
