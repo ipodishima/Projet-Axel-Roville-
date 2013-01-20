@@ -34,7 +34,7 @@
     UINavigationController *wineListNavigationController = [[UINavigationController alloc] initWithRootViewController: wineLoadViewController];
     wineListNavigationController.title = @"Vins";
     
-    CoursViewController *coursViewController = [[CoursViewController alloc] initWithNibName:@"CoursViewController" bundle:nil];
+    CoursViewController *coursViewController = [[CoursViewController alloc] initWithStyle:UITableViewStylePlain];
     coursViewController.title = @"Cours";
     
 //    OrdersListViewController *ordersListViewController = [[OrdersListViewController alloc] initWithNibName:@"OrdersListViewController" bundle:nil];

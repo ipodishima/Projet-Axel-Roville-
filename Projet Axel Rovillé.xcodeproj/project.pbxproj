@@ -28,7 +28,6 @@
 		FA34522016A1DD3C00754720 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FA34521E16A1DD3C00754720 /* InfoPlist.strings */; };
 		FA34522316A1DD3D00754720 /* Projet_Axel_Roville_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = FA34522216A1DD3D00754720 /* Projet_Axel_Roville_Tests.m */; };
 		FA34524E16A2DFA100754720 /* CoursViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA34524C16A2DFA000754720 /* CoursViewController.m */; };
-		FA34524F16A2DFA100754720 /* CoursViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA34524D16A2DFA100754720 /* CoursViewController.xib */; };
 		FA34525916A310B200754720 /* fakeDataListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA34525816A310B200754720 /* fakeDataListViewController.m */; };
 		FA5C550816A31E15001F006F /* DetailListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA5C550616A31E15001F006F /* DetailListViewController.m */; };
 		FA5C550916A31E15001F006F /* DetailListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA5C550716A31E15001F006F /* DetailListViewController.xib */; };
@@ -105,7 +104,6 @@
 		FA34522216A1DD3D00754720 /* Projet_Axel_Roville_Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Projet_Axel_Roville_Tests.m; sourceTree = "<group>"; };
 		FA34524B16A2DFA000754720 /* CoursViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoursViewController.h; sourceTree = "<group>"; };
 		FA34524C16A2DFA000754720 /* CoursViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoursViewController.m; sourceTree = "<group>"; };
-		FA34524D16A2DFA100754720 /* CoursViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CoursViewController.xib; sourceTree = "<group>"; };
 		FA34525716A310B100754720 /* fakeDataListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fakeDataListViewController.h; sourceTree = "<group>"; };
 		FA34525816A310B200754720 /* fakeDataListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = fakeDataListViewController.m; sourceTree = "<group>"; };
 		FA5C550516A31E15001F006F /* DetailListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailListViewController.h; sourceTree = "<group>"; };
@@ -249,7 +247,6 @@
 				FA3451FE16A1DD3C00754720 /* Supporting Files */,
 				FA34524B16A2DFA000754720 /* CoursViewController.h */,
 				FA34524C16A2DFA000754720 /* CoursViewController.m */,
-				FA34524D16A2DFA100754720 /* CoursViewController.xib */,
 				FA5C552D16A34212001F006F /* WineLoadViewController.h */,
 				FA5C552E16A34213001F006F /* WineLoadViewController.m */,
 				FA5C552F16A34213001F006F /* WineLoadViewController.xib */,
@@ -413,7 +410,6 @@
 				FA34520A16A1DD3C00754720 /* Default.png in Resources */,
 				FA34520C16A1DD3C00754720 /* Default@2x.png in Resources */,
 				FA34520E16A1DD3C00754720 /* Default-568h@2x.png in Resources */,
-				FA34524F16A2DFA100754720 /* CoursViewController.xib in Resources */,
 				FA5C550916A31E15001F006F /* DetailListViewController.xib in Resources */,
 				FA5C551816A32FB8001F006F /* chateauyquem1995.jpeg in Resources */,
 				FA5C551916A32FB8001F006F /* leovillebarton1990.jpeg in Resources */,
